@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
 import {useDispatch, useSelector} from "react-redux";
@@ -312,7 +312,7 @@ function ProductList({onHomeClick}) {
                                 <div key={plant.name} className="product-card">
                                     <h3 className="plantname_heading">{plant.name}</h3>
                                     <img src={plant.image} alt={plant.name} className="product-image"/>
-                                    <p className="product-title">{plant.description}</p>
+                                    <p className="product-description">{plant.description}</p>
                                     <p className="product-price">{plant.cost}</p>
                                     <button
                                         className={`${itemIsInCart(plant.name) && 'added-to-cart'} product-button`}
