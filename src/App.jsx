@@ -16,6 +16,7 @@ function App() {
     setShowProductList(false);
   };
 
+
   return (
     <div className="app-container">
       <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
